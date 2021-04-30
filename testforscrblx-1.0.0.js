@@ -4,7 +4,7 @@ class SaveEngine {
     }
     getInfo () {
         return {
-            id: 'saveengine',
+            id: 'SaveEngine',
             name: 'Save Engine',
             blocks: [
                 {
@@ -29,3 +29,5 @@ class SaveEngine {
     
     }
 }
+
+Scratch.extentions.Register(new SaveEngine)
