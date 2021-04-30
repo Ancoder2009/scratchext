@@ -1,6 +1,8 @@
 console.log("Loading testforscrblx-1.0.0");
 console.log("Loading game engine!");
 
+var user
+
 class gameengine {
 	constructor(runtime, extensionId) {
 		this.runtime = runtime;
@@ -54,5 +56,9 @@ class gameengine {
 		.catch(function (error) {
     		 console.log('Request failed', error);
   		});
+		return data
+		
 	}
 }
+
+Scratch.extensions.register(new gameengine());
